@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Contact Us</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
 <body>
     <!--NAVBAR-->
-    <nav>
-        <ul>
+    <nav class="nav-bar">
+        <ul id ="nav-border">
             <li><a href="index.html">HOME</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
         </ul>
@@ -16,11 +17,31 @@
     <!--HEADER-->
     <header>
         <div>
-            <h1>Contact Us</h1>
+            <h1 class="animate-text">Contact Us</h1>
 
-            <img src="images/cat.png" alt="Two cats together" />
         </div>
     </header>
+
+    <!--FORM-->
+    <section>
+        <div>
+            <h3 id="contact-h3">Please provide your information</h3>
+        <div>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    </div>
+     </div>
+    </section>
     <!--FOOTER-->
     <footer>
         <table>
